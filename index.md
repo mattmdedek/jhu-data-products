@@ -3,7 +3,7 @@ title       : Economic Data Explorer
 subtitle    : JHU's Coursera Developing Data Products Course Project
 author      : mattmdedek
 job         : 
-framework   : revealjs        # {io2012, html5slides, shower, dzslides, ...}
+framework   : impressjs     # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
