@@ -11,12 +11,12 @@ require(rCharts)
 
 #options(RCHART_LIB='nvd3')
 
-colDf <- read.table("../data/ColumnNames.txt", sep="\t", header=T)
+colDf <- read.table("data/ColumnNames.txt", sep="\t", header=T)
 colDf <- colDf[colDf$ColLabel != "" & colDf$ColLabel != 'Year',]
 colDf$ColName <- as.character(colDf$ColName)
 colDf$ColLabel <- as.character(colDf$ColLabel)
 
-df <- read.table("../data/mergedData.txt", sep="\t", header=T)
+df <- read.table("data/mergedData.txt", sep="\t", header=T)
 
 shinyUI(fluidPage(
 

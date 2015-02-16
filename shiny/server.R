@@ -11,7 +11,7 @@ library(reshape2)
 
 #options(RCHART_WIDTH=600)
 
-df <- read.table("../data/mergedData.txt", sep="\t", header=T)
+df <- read.table("data/mergedData.txt", sep="\t", header=T)
 df$pcHouseR <- df$HouseRepublicans / (df$HouseRepublicans + df$HouseDemocrats)
 df$pcSenR <- df$SenRepublicans / (df$SenRepublicans + df$SenDemocrats)
 df$HouseParty <- ifelse(df$pcHouseR < 1/3, 'Democrat Super Majority',
@@ -23,7 +23,7 @@ df$SenParty <- ifelse(df$pcSenR < 1/3, 'Democrat Super Majority',
                         ifelse(df$pcSenR == 1/2, 'Split',
                         ifelse(df$pcSenR < 2/3, 'Republican Majority', 'Republican Super Majority'))))
 
-colDf <- read.table("../data/ColumnNames.txt", sep="\t", header=T)
+colDf <- read.table("data/ColumnNames.txt", sep="\t", header=T)
 colDf <- colDf[colDf$ColLabel != "",]
 colDf$ColName <- as.character(colDf$ColName)
 colDf$ColLabel <- as.character(colDf$ColLabel)
