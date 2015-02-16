@@ -11,24 +11,41 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Slide 1 
+## Economic Data Explorer
 
---- .class #id 
+### Coursera Johns Hopkins University
 
-## Slide 2
+### Data Science Specialization 
 
----
+--- #Slide1
 
-## Slide 3
+## Politicians Love to Blame Eachother for the Economy.
 
----
+## But does the ruling political party lead the economy?
 
-## Slide 4
+--- #Slide2
 
----
+## Let's Look at some data:
 
-## Slide 5
+* Who's in charge?
+* How high are taxes?
+* Where is the money spent?
 
+--- #Slide3
 
+## This data comes from US government sources:
+
+* Political Parties:
+* Budget Data:
+
+http://www.whitehouse.gov/omb/budget/Historicals
+
+--- #Slide4
+
+## Explore the data for yourself
+
+### (And don't hold baseless opinions anymore)
+
+--- #Slide5
 
 
