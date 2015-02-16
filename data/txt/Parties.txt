@@ -1,0 +1,68 @@
+Congress	Year	SenTotal	SenDemocrats	SenRepublicans	SenOthers	SenVacancies	HouseTotal	HouseDemocrats	HouseRepublicans	HouseOthers	HouseVacancies	President	PresParty
+80th	1948	96	45	51	0	0	435	188	246	1	0	Harry S. Truman	D
+81st	1949	96	54	42	0	0	435	263	171	1	0	Harry S. Truman	D
+81st	1950	96	54	42	0	0	435	263	171	1	0	Harry S. Truman	D
+82nd	1951	96	48	47	1	0	435	234	199	2	0	Harry S. Truman	D
+82nd	1952	96	48	47	1	0	435	234	199	2	0	Harry S. Truman	D
+83rd	1953	96	46	48	2	0	435	213	221	1	0	Dwight D. Eisenhower	R
+83rd	1954	96	46	48	2	0	435	213	221	1	0	Dwight D. Eisenhower	R
+84th	1955	96	48	47	1	0	435	232	203	0	0	Dwight D. Eisenhower	R
+84th	1956	96	48	47	1	0	435	232	203	0	0	Dwight D. Eisenhower	R
+85th	1957	96	49	47	0	0	435	234	201	0	0	Dwight D. Eisenhower	R
+85th	1958	96	49	47	0	0	435	234	201	0	0	Dwight D. Eisenhower	R
+86th	1959	98	64	34	0	0	437	283	153	1	0	Dwight D. Eisenhower	R
+86th	1960	98	64	34	0	0	437	283	153	1	0	Dwight D. Eisenhower	R
+87th	1961	100	64	36	0	0	437	262	175	0	0	John F. Kennedy	D
+87th	1962	100	64	36	0	0	437	262	175	0	0	John F. Kennedy	D
+88th	1963	100	67	33	0	0	435	258	176	0	1	Lyndon B. Johnson	D
+88th	1964	100	67	33	0	0	435	258	176	0	1	Lyndon B. Johnson	D
+89th	1965	100	68	32	0	0	435	295	140	0	0	Lyndon B. Johnson	D
+89th	1966	100	68	32	0	0	435	295	140	0	0	Lyndon B. Johnson	D
+90th	1967	100	64	36	0	0	435	248	187	0	0	Lyndon B. Johnson	D
+90th	1968	100	64	36	0	0	435	248	187	0	0	Lyndon B. Johnson	D
+91st	1969	100	58	42	0	0	435	243	192	0	0	Richard Nixon	R
+91st	1970	100	58	42	0	0	435	243	192	0	0	Richard Nixon	R
+92nd	1971	100	54	44	2	0	435	255	180	0	0	Richard Nixon	R
+92nd	1972	100	54	44	2	0	435	255	180	0	0	Richard Nixon	R
+93rd	1973	100	56	42	2	0	435	242	192	1	0	Gerald Ford	R
+93rd	1974	100	56	42	2	0	435	242	192	1	0	Gerald Ford	R
+94th	1975	100	61	37	2	0	435	291	144	0	0	Gerald Ford	R
+94th	1976	100	61	37	2	0	435	291	144	0	0	Gerald Ford	R
+95th	1977	100	61	38	1	0	435	292	143	0	0	Jimmy Carter	D
+95th	1978	100	61	38	1	0	435	292	143	0	0	Jimmy Carter	D
+96th	1979	100	58	41	1	0	435	277	158	0	0	Jimmy Carter	D
+96th	1980	100	58	41	1	0	435	277	158	0	0	Jimmy Carter	D
+97th	1981	100	46	53	1	0	435	242	192	1	0	Ronald Reagan	R
+97th	1982	100	46	53	1	0	435	242	192	1	0	Ronald Reagan	R
+98th	1983	100	46	54	0	0	435	269	166	0	0	Ronald Reagan	R
+98th	1984	100	46	54	0	0	435	269	166	0	0	Ronald Reagan	R
+99th	1985	100	47	53	0	0	435	253	182	0	0	Ronald Reagan	R
+99th	1986	100	47	53	0	0	435	253	182	0	0	Ronald Reagan	R
+100th	1987	100	55	45	0	0	435	258	177	0	0	Ronald Reagan	R
+100th	1988	100	55	45	0	0	435	258	177	0	0	Ronald Reagan	R
+101st	1989	100	55	45	0	0	435	260	175	0	0	George H. W. Bush	R
+101st	1990	100	55	45	0	0	435	260	175	0	0	George H. W. Bush	R
+102nd	1991	100	56	44	0	0	435	267	167	1	0	George H. W. Bush	R
+102nd	1992	100	56	44	0	0	435	267	167	1	0	George H. W. Bush	R
+103rd	1993	100	57	43	0	0	435	258	176	1	0	Bill Clinton	D
+103rd	1994	100	57	43	0	0	435	258	176	1	0	Bill Clinton	D
+104th	1995	100	48	52	0	0	435	204	230	1	0	Bill Clinton	D
+104th	1996	100	48	52	0	0	435	204	230	1	0	Bill Clinton	D
+105th	1997	100	45	55	0	0	435	207	226	2	0	Bill Clinton	D
+105th	1998	100	45	55	0	0	435	207	226	2	0	Bill Clinton	D
+106th	1999	100	45	55	0	0	435	211	223	1	0	Bill Clinton	D
+106th	2000	100	45	55	0	0	435	211	223	1	0	Bill Clinton	D
+107th	2001	100	50	50	1	0	435	212	221	2	0	George W. Bush	R
+107th	2002	100	50	50	1	0	435	212	221	2	0	George W. Bush	R
+108th	2003	100	48	51	1	0	435	205	229	1	0	George W. Bush	R
+108th	2004	100	48	51	1	0	435	205	229	1	0	George W. Bush	R
+109th	2005	100	44	55	1	0	435	202	231	1	1	George W. Bush	R
+109th	2006	100	44	55	1	0	435	202	231	1	1	George W. Bush	R
+110th	2007	100	49	49	2	0	435	236	199	0	0	George W. Bush	R
+110th	2008	100	49	49	2	0	435	236	199	0	0	George W. Bush	R
+111th	2009	100	57	41	2	0	435	257	178	0	0	Barack Obama	D
+111th	2010	100	57	41	2	0	435	257	178	0	0	Barack Obama	D
+112th	2011	100	51	47	2	0	435	193	242	0	0	Barack Obama	D
+112th	2012	100	51	47	2	0	435	193	242	0	0	Barack Obama	D
+113th	2013	100	53	45	2	0	435	201	234	0	0	Barack Obama	D
+113th	2014	100	53	45	2	0	435	201	234	0	0	Barack Obama	D

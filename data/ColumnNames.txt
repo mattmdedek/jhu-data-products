@@ -1,0 +1,62 @@
+"ColName"	"ColLabel"	"OkX"	"OkY"	"OkColor"
+"Year"	"Year"	1	0	0
+"TotExpGDP.x"	"% GDP Total Gov't Spending"	1	1	0
+"FedExpGDP"	"% GDP Federal Gov't Spending"	1	1	0
+"FedExpGDPOnBudget"	"% GDP On Budget Federal Gov't Spending"	1	1	0
+"FedExpGDPOffBudget"	"% GDP On Off Budget Federal Gov't Spending"	1	1	0
+"NIPAExpGDP"	""	0	0	0
+"SLExpGDP.x"	""	0	0	0
+"TotExpB.x"	""	0	0	0
+"FedExpB"	""	0	0	0
+"FedExpBOnBudget"	""	0	0	0
+"FedExpBOffBudget"	""	0	0	0
+"NIPAExpB"	""	0	0	0
+"SLExpB.x"	""	0	0	0
+"TotSurDefB"	""	0	0	0
+"FedSurDefB"	""	0	0	0
+"FedSurDefBOnBudget"	""	0	0	0
+"FedSurDefBOffBudget"	""	0	0	0
+"NIPASurDefB"	""	0	0	0
+"TotSurDefGDP"	"% GDP Total Gov't Surplus/Deficit"	1	1	0
+"FedSurDefGDP"	"% GDP Federal Gov't Surplus/Deficit"	1	1	0
+"SLSurDefGDP"	""	0	0	0
+"TotRecB"	""	0	0	0
+"FedRecB"	""	0	0	0
+"FedRecBOnBudget"	""	0	0	0
+"FedRecBOffBudget"	""	0	0	0
+"NIPARecB"	""	0	0	0
+"GDP"	"GDP (Billions of Dollars)"	1	1	0
+"TotRecGDP"	"% GDP Total Gov't Reciepts"	1	1	0
+"FedRecGDP"	"% GDP Federal Gov't Reciepts"	1	1	0
+"SLRecGDP"	""	0	0	0
+"Congress"	""	0	0	0
+"SenTotal"	""	0	0	0
+"SenDemocrats"	""	0	0	0
+"SenRepublicans"	""	0	0	0
+"SenOthers"	""	0	0	0
+"SenVacancies"	""	0	0	0
+"SenParty"	"Senate Majority"	0	0	1
+"HouseTotal"	""	0	0	0
+"HouseDemocrats"	""	0	0	0
+"HouseRepublicans"	""	0	0	0
+"HouseOthers"	""	0	0	0
+"HouseVacancies"	""	0	0	0
+"HouseParty"	"House Majority"	0	0	1
+"President"	"President"	0	0	0
+"PresParty"	"Party of President"	0	0	1
+"pcHouseR"	"% of House Republican"	1	1	0
+"pcSenR"	"% of Senate Republican"	1	1	0
+"TotExpGDP.y"	""	0	0	0
+"FedDefenseExpGDP"	"% GDP Defense"	1	1	0
+"FedInterestExpGDP"	"% GDP Interest"	1	1	0
+"FedSSExpGDP"	"% GDP Social Security"	1	1	0
+"FedOtherIndExpGDP"	"% GDP Individual Other"	1	1	0
+"FedOtherExpGDP"	"% GDP Other"	1	1	0
+"SLExpGDP.y"	""	0	0	0
+"TotExpB.y"	""	0	0	0
+"FedDefenseExpB"	""	0	0	0
+"FedInterestExpB"	""	0	0	0
+"FedSSExpB"	""	0	0	0
+"FedOtherIndExpB"	""	0	0	0
+"FedOtherExpB"	""	0	0	0
+"SLExpB.y"	""	0	0	0
