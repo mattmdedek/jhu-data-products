@@ -11,40 +11,62 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Economic Data Explorer
+### Coursera: Johns Hopkins University
 
-### Coursera Johns Hopkins University
+### Data Science Specialization
 
-### Data Science Specialization 
+### Developing Data Products Course Project
+
+## Political and Budgetary Data Explorer
 
 --- #Slide1
 
-## Politicians Love to Blame Eachother for the Economy.
+## Are Political Stereotypes Just Hype?
 
-## But does the ruling political party lead the economy?
+Politicians and pundits love to stereotype the US political parties.
+The commonly held beleifs are that:
+
+* Republicans tax less and spend less
+* Democrats tax more and spend more
+
+## But does the size of government change depending on who is in charge?
 
 --- #Slide2
 
-## Let's Look at some data:
+## Let's Look at the Data
+
+This data product lets you explore US Federal budget data
+in the context of political party majorities in congress and
+the oval office.
+
+You can ask your own questions like:
 
 * Who's in charge?
-* How high are taxes?
-* Where is the money spent?
+* How much money is being spent and where?
+* How much money is being collected?
 
 --- #Slide3
 
-## This data comes from US government sources:
+## Think For Yourself
 
-* Political Parties:
-* Budget Data:
+Make your own graphs to answer your own questions.
 
+Select variables for a scatter plot, drill down into
+the political environment for each year.
+
+#### Data sources:
+
+You will be looking at official data.
+
+* Political Party Data: Wikipedia
+http://en.wikipedia.org/wiki/Party_divisions_of_United_States_Congresses
+
+* Budget Data: Office of Management and Budget
 http://www.whitehouse.gov/omb/budget/Historicals
 
 --- #Slide4
 
-## Explore the data for yourself
-
-### (And don't hold baseless opinions anymore)
+# placeholder text
 
 --- #Slide5
 
