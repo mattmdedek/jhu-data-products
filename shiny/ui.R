@@ -6,52 +6,79 @@
 #
 
 library(shiny)
-library(xlsx)
 require(rCharts)
 
-#options(RCHART_LIB='nvd3')
-
+# Get information about columns from the configuration file
+# this configuration file has user-friendly column names
+# and denotes which columns are appropriate X and Y variables
+# for plotting.
 colDf <- read.table("data/ColumnNames.txt", sep="\t", header=T)
-colDf <- colDf[colDf$ColLabel != "" & colDf$ColLabel != 'Year',]
+colDf <- colDf[colDf$ColLabel != "",]
 colDf$ColName <- as.character(colDf$ColName)
 colDf$ColLabel <- as.character(colDf$ColLabel)
 
+# Read the data table
 df <- read.table("data/mergedData.txt", sep="\t", header=T)
 
 shinyUI(fluidPage(
 
-  # Application title
-  titlePanel("Budget and Political Parties in the USA"),
+  # Title
+  titlePanel("Budget and Political Parties in the USA: 1948-2014"),
 
-  # Sidebar with a slider input for number of bins
-  sidebarLayout(
-    sidebarPanel(
-      selectInput("xVar", "X Axis",
-                  choices = colDf[colDf$OkX == 1,]$ColLabel),
-      selectInput("yVar", "Y Axis",
-                  choices = colDf[colDf$OkY == 1,]$ColLabel),
-      selectInput("colVar", "Color By",
-                  choices = c("Party of President", "Senate Majority", "House Majority")),
-      selectInput("sYear", "Year",
-                  choices = df$Year)
+  # Widgets and main plot
+  fluidRow(
+    # Sidebar with a slider input for number of bins
+    column(4,
+      wellPanel(
+        # Permitted X-axis variables.
+        # subset the columns by $OkX
+        selectInput("xVar", "X Axis",
+                    choices = colDf[colDf$OkX == 1,]$ColLabel,
+                    selected="Year"),
+        # Permitted Y-axis variables.
+        # subset the columns by $OkY
+        selectInput("yVar", "Y Axis",
+                    choices = colDf[colDf$OkY == 1,]$ColLabel,
+                    selected = "% GDP Federal Gov't Spending"),
+        # Only allow points to be colored by political information
+        selectInput("colVar", "Color By",
+                    choices = c("Party of President", "Senate Majority", "House Majority"),
+                    selected = "Party of President"),
+        selectInput("sYear", "Year",
+                    choices = df$Year, selected=2014)
+      )
     ),
 
-    # Show a plot of the generated distribution
-    mainPanel(
-      tabsetPanel(
-        tabPanel('Plots',
-            showOutput("distPlot", "nvd3"),
-            headerPanel(h4("Year:")),
-            headerPanel(h5("House")),
-            showOutput("pieHouse", "nvd3"),
-            headerPanel(h5("Senate")),
-            showOutput("pieSenate", "nvd3"),
-            headerPanel(h5("President")),
-            showOutput("piePresident", "nvd3")
-        ),
-        tabPanel('Data Table',
-          dataTableOutput("SummaryTable"))
-      )
+    # Show scatter plot of the selected variables
+    column(8, div(showOutput("distPlot", "nvd3")))
+  ),
+  
+  # separating horizontal line
+  hr(),
+  
+  # Header for political summary - displays the year
+  fluidRow(column(12, headerPanel(h3(textOutput("echoYear"))))),
+  
+  # President's name in color
+  # Could not find a way to set color in server.R, so there are
+  # two place holders for the president's name (red and blue for R/D)
+  # only one of these will have input.
+  fluidRow(column(12, headerPanel(h4(textOutput("echoPresidentR"), style="color:red")))),
+  fluidRow(column(12, headerPanel(h4(textOutput("echoPresidentD"), style="color:blue")))),
+  
+  # Pie charts summarizing political party representation
+  # in congress for the selected year
+  fluidRow(column(6,
+      fluidRow(column(12, headerPanel(h4("House of Representatives")))),
+      fluidRow(column(12,
+        div(showOutput("pieHouse", "nvd3"), style="margin-left:-100px")
+      ))
+    ),
+    column(6,
+      fluidRow(column(12, headerPanel(h4("Senate")))),
+      fluidRow(column(12,
+        div(showOutput("pieSenate", "nvd3"), style="margin-left:-100px")
+      ))
     )
   )
 ))
