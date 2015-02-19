@@ -56,34 +56,6 @@ http://www.whitehouse.gov/omb/budget/Historicals
 #### View Annual Details
 
 
-```
-## Warning in file(file, "rt"): cannot open file 'data/mergedData.txt': No
-## such file or directory
-```
-
-```
-## Error in file(file, "rt"): cannot open the connection
-```
-
-```
-## Error in eval(i, data, env): invalid 'envir' argument of type 'closure'
-```
-
-```
-## Error in eval(expr, envir, enclos): object 'tmpP' not found
-```
-
-```
-## Error in eval(expr, envir, enclos): object 'tmpP' not found
-```
-
-```
-## Error in eval(expr, envir, enclos): object 'tmpP' not found
-```
-
-```
-## Error in eval(expr, envir, enclos): object 'tmpP' not found
-```
 
 --- #Slide4
 

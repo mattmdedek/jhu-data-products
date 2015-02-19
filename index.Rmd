@@ -60,7 +60,7 @@ http://www.whitehouse.gov/omb/budget/Historicals
 require(rCharts)
 require(reshape2)
 
-df <- read.table("data/mergedData.txt", sep="\t", header=T)
+df <- read.table("assets/demo-data/mergedData.txt", sep="\t", header=T)
 
 # Create the main plot
 tmpP<-nPlot(FedExpGDP ~ Year, data=df, type="scatterChart", group='PresParty')
