@@ -25,6 +25,14 @@ shinyUI(fluidPage(
   # Title
   titlePanel("Budget and Political Parties in the USA: 1948-2014"),
 
+  # Instructions
+  fluidRow(column(12,
+    p("Explore budget data normalized to US GDP."),
+    p("Each point represents a year colored by the majority political party of the branch of government selected below."),
+    p("Hover your mouse over a point in the scatter plot to view the details for the corresponding year."),
+    a("View my source code on GitHub", href="https://github.com/mattmdedek/jhu-data-products/tree/master")
+  )),
+  
   # Widgets and main plot
   fluidRow(
     # Sidebar with a slider input for number of bins
@@ -32,19 +40,19 @@ shinyUI(fluidPage(
       wellPanel(
         # Permitted X-axis variables.
         # subset the columns by $OkX
-        selectInput("xVar", "X Axis",
+        selectInput("xVar", "Budget metric for the horizontal axis:",
                     choices = colDf[colDf$OkX == 1,]$ColLabel,
                     selected="Year"),
         # Permitted Y-axis variables.
         # subset the columns by $OkY
-        selectInput("yVar", "Y Axis",
+        selectInput("yVar", "Budget metric for the vertical axis:",
                     choices = colDf[colDf$OkY == 1,]$ColLabel,
                     selected = "% GDP Federal Gov't Spending"),
         # Only allow points to be colored by political information
-        selectInput("colVar", "Color By",
+        selectInput("colVar", "Branch of government for coloring:",
                     choices = c("Party of President", "Senate Majority", "House Majority"),
                     selected = "Party of President"),
-        selectInput("sYear", "Year",
+        selectInput("sYear", "Select a year for donut chart details",
                     choices = df$Year, selected=2014)
       )
     ),
@@ -56,8 +64,10 @@ shinyUI(fluidPage(
   # separating horizontal line
   hr(),
   
+  
   # Header for political summary - displays the year
   fluidRow(column(12, headerPanel(h3(textOutput("echoYear"))))),
+  p("The donut charts below summarize the congressional seats held by political party for the year selected above."),
   
   # President's name in color
   # Could not find a way to set color in server.R, so there are
