@@ -60,7 +60,7 @@ http://www.whitehouse.gov/omb/budget/Historicals
 require(knitr)
 require(reshape2)
 require(rCharts)
-options(RCHART_WIDTH = 300, RCHART_HEIGHT = 200)
+options(RCHART_WIDTH = 700, RCHART_HEIGHT = 280)
 
 df <- read.table("assets/demo-data/mergedData.txt", sep="\t", header=T)
 
