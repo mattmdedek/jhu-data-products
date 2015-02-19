@@ -56,7 +56,14 @@ http://www.whitehouse.gov/omb/budget/Historicals
 
 #### Choose variables to compare, view annual details
 
-<iframe src=' assets/fig/simple-plot-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chartb1e917079514 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+
+
+```r
+tmpP<-nPlot(FedExpGDP ~ Year, data=df, type="scatterChart", group='PresParty')
+```
+
+<iframe src=' assets/fig/example-plot-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chartb1e9283f946 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 --- #Slide5
 

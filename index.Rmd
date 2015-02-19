@@ -56,16 +56,20 @@ http://www.whitehouse.gov/omb/budget/Historicals
 
 #### Choose variables to compare, view annual details
 
-```{r simple-plot, comment = NA, message = F, echo = F, results = 'asis'}
+```{r r-setup, comment = NA, message = F, echo = F, results = 'asis'}
 require(knitr)
 require(reshape2)
 require(rCharts)
 options(RCHART_WIDTH = 700, RCHART_HEIGHT = 280)
 
 df <- read.table("assets/demo-data/mergedData.txt", sep="\t", header=T)
+```
 
-# Create the main plot
+```{r echoed-rcode}
 tmpP<-nPlot(FedExpGDP ~ Year, data=df, type="scatterChart", group='PresParty')
+```
+
+```{r example-plot, comment = NA, message = F, echo = F, results = 'asis'}
 tmpP$chart(color=c('Blue', 'Red'))
 
 # label the axes
