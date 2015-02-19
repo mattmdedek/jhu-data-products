@@ -50,13 +50,96 @@ http://www.whitehouse.gov/omb/budget/Historicals
 --- #Slide3
 
 ## Features
+
 #### Choose variables to compare
 
 #### View Annual Details
 
+
+```r
+require(rCharts)
+require(reshape2)
+
+df <- read.table("data/mergedData.txt", sep="\t", header=T)
+```
+
+```
+## Warning in file(file, "rt"): cannot open file 'data/mergedData.txt': No
+## such file or directory
+```
+
+```
+## Error in file(file, "rt"): cannot open the connection
+```
+
+```r
+# Create the main plot
+tmpP<-nPlot(FedExpGDP ~ Year, data=df, type="scatterChart", group='PresParty')
+```
+
+```
+## Error in eval(i, data, env): invalid 'envir' argument of type 'closure'
+```
+
+```r
+tmpP$chart(color=c('Blue', 'Red'))
+```
+
+```
+## Error in eval(expr, envir, enclos): object 'tmpP' not found
+```
+
+```r
+# label the axes
+tmpP$xAxis(axisLabel = "Year")
+```
+
+```
+## Error in eval(expr, envir, enclos): object 'tmpP' not found
+```
+
+```r
+tmpP$yAxis(axisLabel = "Federal Gov't Expeditures as % of GDP")
+```
+
+```
+## Error in eval(expr, envir, enclos): object 'tmpP' not found
+```
+
+```r
+# Generate a tooltip on hover which displays
+# color coded information of the president, house and senate.
+tmpP$chart(tooltipContent="#!
+        function(key, x, y, e){
+          tt = '<strong>' + e.point.Year + '</strong><br/>';
+          tt = tt + 'President: <font color=\"';
+          if(e.point.PresParty == 'Democrat') {
+            tt = tt + 'blue';
+          } else {
+            tt = tt + 'red';
+          }
+          tt = tt + '\">' + e.point.President + '</font>';
+          tt = tt + '<br />House: <font color=\"red\">' + e.point.HouseRepublicans + '</font> / ';
+          tt = tt + '<font color=\"blue\">' + e.point.HouseDemocrats + '</font>';
+          tt = tt + '<br />Senate: <font color=\"red\">' + e.point.SenRepublicans + '</font> / ';
+          tt = tt + '<font color=\"blue\">' + e.point.SenDemocrats + '</font>';
+          return tt;
+        } !#")
+```
+
+```
+## Error in eval(expr, envir, enclos): object 'tmpP' not found
+```
+
+```r
+# attach the plot
+# tmpP$addParams(width=600, height=400)
+# print(tmpP)
+```
+
 --- #Slide4
 
-## Thanks for Viewing My App!
+## Thanks for Viewing My App
 
 Application URL:
 https://mattmdedek.shinyapps.io/JHU-DataProductsProject/
@@ -67,6 +150,6 @@ https://github.com/mattmdedek/jhu-data-products/tree/master
 Slides Source Code:
 https://github.com/mattmdedek/jhu-data-products/tree/gh-pages
 
-
 --- #Slide5
+
 
