@@ -91,7 +91,7 @@ tmpP$chart(tooltipContent="#!
         } !#")
 
 # attach the plot
-# tmpP$addParams(width=600, height=400)
+tmpP$addParams(width=600, height=400)
 tmpP
 
 ```
