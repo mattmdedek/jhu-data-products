@@ -7,9 +7,10 @@ framework   : revealjs     # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
+ext_widgets : {rCharts: libraries/nvd3}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
----
+--- #Slide1
 
 ## Coursera: Johns Hopkins University
 
@@ -19,7 +20,7 @@ knit        : slidify::knit2slides
 
 ## Political and Budgetary Data Explorer
 
---- #Slide1
+--- #Slide2
 
 ## Are Political Stereotypes Hype or Truth?
 
@@ -31,7 +32,7 @@ knit        : slidify::knit2slides
 
 Does the data show this relationship between the size of government and the political parties in power?
 
---- #Slide2
+--- #Slide3
 
 ## The Application
 
@@ -47,7 +48,7 @@ http://en.wikipedia.org/wiki/Party_divisions_of_United_States_Congresses
 * Budget Data: Office of Management and Budget
 http://www.whitehouse.gov/omb/budget/Historicals
 
---- #Slide3
+--- #Slide4
 
 ## Features
 
@@ -55,9 +56,9 @@ http://www.whitehouse.gov/omb/budget/Historicals
 
 #### View Annual Details
 
+<iframe src=' assets/fig/simple-plot-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chartb1e97b8c18d3 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
-
---- #Slide4
+--- #Slide5
 
 ## Thanks for Viewing My App
 
@@ -69,7 +70,4 @@ https://github.com/mattmdedek/jhu-data-products/tree/master
 
 Slides Source Code:
 https://github.com/mattmdedek/jhu-data-products/tree/gh-pages
-
---- #Slide5
-
 
