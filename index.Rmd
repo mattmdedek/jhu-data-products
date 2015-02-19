@@ -28,32 +28,17 @@ The commonly held beleifs are that:
 * Republicans tax less and spend less
 * Democrats tax more and spend more
 
-But does the data show a relationship between the size of government and the political party in power?
+Does the data show this relationship between the size of government and the political parties in power?
 
 --- #Slide2
 
 ## The Application
 
 This data product lets you explore US Federal budget data
-in the context of political party majorities in congress and
+in the context of the political party majorities in congress and
 the oval office.
 
-* Who's in charge?
-* How much money is being spent and where?
-* How much money is being collected?
-
---- #Slide3
-
-## Think For Yourself
-
-Make your own graphs to answer your own questions.
-
-Select variables for a scatter plot, drill down into
-the political environment for each year.
-
-#### Data sources:
-
-You will be looking at official data.
+## Sources of Data:
 
 * Political Party Data: Wikipedia
 http://en.wikipedia.org/wiki/Party_divisions_of_United_States_Congresses
@@ -61,10 +46,26 @@ http://en.wikipedia.org/wiki/Party_divisions_of_United_States_Congresses
 * Budget Data: Office of Management and Budget
 http://www.whitehouse.gov/omb/budget/Historicals
 
+--- #Slide3
+
+## Features
+#### Choose variables to compare
+
+#### View Annual Details
+
 --- #Slide4
 
-# placeholder text
+## Thanks for Viewing My App!
+
+Application URL:
+https://mattmdedek.shinyapps.io/JHU-DataProductsProject/
+
+Application Source Code:
+https://github.com/mattmdedek/jhu-data-products/tree/master
+
+Slides Source Code:
+https://github.com/mattmdedek/jhu-data-products/tree/gh-pages
+
 
 --- #Slide5
-
 
