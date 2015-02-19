@@ -12,6 +12,8 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 --- #Slide1
 
+<style>iframe{background-color: white}</style>
+
 ## Coursera: Johns Hopkins University
 
 #### Data Science Specialization
@@ -52,9 +54,7 @@ http://www.whitehouse.gov/omb/budget/Historicals
 
 ## Features
 
-#### Choose variables to compare
-
-#### View Annual Details
+#### Choose variables to compare, view annual details
 
 <iframe src=' assets/fig/simple-plot-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chartb1e97b8c18d3 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
