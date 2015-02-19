@@ -21,12 +21,13 @@ knit        : slidify::knit2slides
 
 --- #Slide1
 
-## Are Political Stereotypes Just Hype?
+## Are Political Stereotypes Hype or Truth?
 
-The commonly held beleifs are that:
+#### The commonly held beleifs are that:
 
 * Republicans tax less and spend less
 * Democrats tax more and spend more
+
 
 Does the data show this relationship between the size of government and the political parties in power?
 
@@ -38,7 +39,7 @@ This data product lets you explore US Federal budget data
 in the context of the political party majorities in congress and
 the oval office.
 
-## Sources of Data:
+### Sources of Data
 
 * Political Party Data: Wikipedia
 http://en.wikipedia.org/wiki/Party_divisions_of_United_States_Congresses
