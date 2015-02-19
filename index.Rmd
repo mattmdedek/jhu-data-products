@@ -11,11 +11,11 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-### Coursera: Johns Hopkins University
+## Coursera: Johns Hopkins University
 
-### Data Science Specialization
+#### Data Science Specialization
 
-### Developing Data Products Course Project
+#### Developing Data Products Course Project
 
 ## Political and Budgetary Data Explorer
 
@@ -23,23 +23,20 @@ knit        : slidify::knit2slides
 
 ## Are Political Stereotypes Just Hype?
 
-Politicians and pundits love to stereotype the US political parties.
 The commonly held beleifs are that:
 
 * Republicans tax less and spend less
 * Democrats tax more and spend more
 
-## But does the size of government change depending on who is in charge?
+But does the data show a relationship between the size of government and the political party in power?
 
 --- #Slide2
 
-## Let's Look at the Data
+## The Application
 
 This data product lets you explore US Federal budget data
 in the context of political party majorities in congress and
 the oval office.
-
-You can ask your own questions like:
 
 * Who's in charge?
 * How much money is being spent and where?
