@@ -55,7 +55,7 @@ http://www.whitehouse.gov/omb/budget/Historicals
 
 #### View Annual Details
 
-```{r simple-plot, fig.height = 6, fig.align = 'center', message = F}
+```{r simple-plot, fig.height = 6, fig.align = 'center', message = F, echo = F}
 
 require(rCharts)
 require(reshape2)

@@ -61,12 +61,6 @@ the oval office.</p>
 
 <h4>View Annual Details</h4>
 
-<pre><code class="r">require(rCharts)
-require(reshape2)
-
-df &lt;- read.table(&quot;data/mergedData.txt&quot;, sep=&quot;\t&quot;, header=T)
-</code></pre>
-
 <pre><code>## Warning in file(file, &quot;rt&quot;): cannot open file &#39;data/mergedData.txt&#39;: No
 ## such file or directory
 </code></pre>
@@ -74,58 +68,19 @@ df &lt;- read.table(&quot;data/mergedData.txt&quot;, sep=&quot;\t&quot;, header=
 <pre><code>## Error in file(file, &quot;rt&quot;): cannot open the connection
 </code></pre>
 
-<pre><code class="r"># Create the main plot
-tmpP&lt;-nPlot(FedExpGDP ~ Year, data=df, type=&quot;scatterChart&quot;, group=&#39;PresParty&#39;)
-</code></pre>
-
 <pre><code>## Error in eval(i, data, env): invalid &#39;envir&#39; argument of type &#39;closure&#39;
 </code></pre>
 
-<pre><code class="r">tmpP$chart(color=c(&#39;Blue&#39;, &#39;Red&#39;))
+<pre><code>## Error in eval(expr, envir, enclos): object &#39;tmpP&#39; not found
 </code></pre>
 
 <pre><code>## Error in eval(expr, envir, enclos): object &#39;tmpP&#39; not found
 </code></pre>
 
-<pre><code class="r"># label the axes
-tmpP$xAxis(axisLabel = &quot;Year&quot;)
-</code></pre>
-
 <pre><code>## Error in eval(expr, envir, enclos): object &#39;tmpP&#39; not found
 </code></pre>
 
-<pre><code class="r">tmpP$yAxis(axisLabel = &quot;Federal Gov&#39;t Expeditures as % of GDP&quot;)
-</code></pre>
-
 <pre><code>## Error in eval(expr, envir, enclos): object &#39;tmpP&#39; not found
-</code></pre>
-
-<pre><code class="r"># Generate a tooltip on hover which displays
-# color coded information of the president, house and senate.
-tmpP$chart(tooltipContent=&quot;#!
-        function(key, x, y, e){
-          tt = &#39;&lt;strong&gt;&#39; + e.point.Year + &#39;&lt;/strong&gt;&lt;br/&gt;&#39;;
-          tt = tt + &#39;President: &lt;font color=\&quot;&#39;;
-          if(e.point.PresParty == &#39;Democrat&#39;) {
-            tt = tt + &#39;blue&#39;;
-          } else {
-            tt = tt + &#39;red&#39;;
-          }
-          tt = tt + &#39;\&quot;&gt;&#39; + e.point.President + &#39;&lt;/font&gt;&#39;;
-          tt = tt + &#39;&lt;br /&gt;House: &lt;font color=\&quot;red\&quot;&gt;&#39; + e.point.HouseRepublicans + &#39;&lt;/font&gt; / &#39;;
-          tt = tt + &#39;&lt;font color=\&quot;blue\&quot;&gt;&#39; + e.point.HouseDemocrats + &#39;&lt;/font&gt;&#39;;
-          tt = tt + &#39;&lt;br /&gt;Senate: &lt;font color=\&quot;red\&quot;&gt;&#39; + e.point.SenRepublicans + &#39;&lt;/font&gt; / &#39;;
-          tt = tt + &#39;&lt;font color=\&quot;blue\&quot;&gt;&#39; + e.point.SenDemocrats + &#39;&lt;/font&gt;&#39;;
-          return tt;
-        } !#&quot;)
-</code></pre>
-
-<pre><code>## Error in eval(expr, envir, enclos): object &#39;tmpP&#39; not found
-</code></pre>
-
-<pre><code class="r"># attach the plot
-# tmpP$addParams(width=600, height=400)
-# print(tmpP)
 </code></pre>
 
 </section>
